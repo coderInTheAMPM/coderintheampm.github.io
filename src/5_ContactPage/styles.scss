@@ -1,0 +1,21 @@
+.contact-page
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: calc(100vh - 5em - 130px);
+
+    margin-bottom: 50px;
+
+    h1
+    {
+        font-size: 70px;
+        color:black;
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        @media screen and (max-width: 650px) { font-size: 50px; text-align: center; }
+    }
+}

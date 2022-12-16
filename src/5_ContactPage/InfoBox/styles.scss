@@ -1,0 +1,21 @@
+.info-box
+{
+    background-color: #36393e;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    
+    width: 1000px;
+    height: 60px;
+
+    padding: 20px;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+
+    color: white;
+    font-size: 20px;
+    @media screen and (max-width: 650px) { display: none; }
+}

@@ -1,0 +1,109 @@
+.newsletter-form
+{
+    width: 50%;
+    min-width: 315px;
+    
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+    background: #fff;
+    padding-top: 30px;
+    box-shadow: 10px 10px 10px rgb(1,1,1,0.4);
+
+    .form-group
+    {
+        padding: 0 25px;
+        padding-bottom: 15px;
+
+        label
+        {
+            color: #333;
+            font-size: 1.2rem; // adding margin below doesn't work???
+        }
+
+        .form-input
+        {
+            color: #111;
+            background: #F5F5F5;
+            font-size: 1.2rem;
+            height: 33px;
+            margin-top: 5px;
+            padding: 6px 12px;
+            border: none;
+
+            width: 100%;
+
+            &:focus { background-color: #ffedb4; }
+        }
+
+        .message { height: 20vh; resize: none; }
+    }
+
+    .send
+    {
+        background-image: linear-gradient(to right, #4D0900, #8e2827);
+        
+        padding: 12px;
+        border: none;
+        transition: all 0.3s ease 0s;
+    
+        color: white;
+        cursor: pointer;
+        font-family: "Roboto Light";
+        font-size: 1.3rem;
+        letter-spacing: 4px;
+        font-weight: 800;
+        min-height: 64px;
+        padding: 19px 26px;
+        position: relative;
+        text-align: center;
+        user-select: none;
+        width: 100%;
+        z-index: 0;
+
+        @media (min-width: 768px) { padding: 19px 32px; }
+
+        &:before {
+            background-color: white;
+            content: "";
+            display: block;
+            height: 100%;
+            left: 0;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: -2;
+        }
+
+        &:after {
+            background-color: #362417;
+            bottom: 4px;
+            content: "";
+            display: block;
+            left: 4px;
+            overflow: hidden;
+            position: absolute;
+            right: 4px;
+            top: 4px;
+            transition: all 100ms ease-out;
+            z-index: -1;
+        }
+
+        &:hover:not(:disabled):after {
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            transition-timing-function: ease-in;
+        }
+
+        &:active:not(:disabled):after {
+            background-color: #826644;
+            bottom: 4px;
+            left: 4px;
+            right: 4px;
+            top: 4px;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+nav{
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: 650px) { flex-direction: column; height: 120px; }
+
+    background-color: #362417;
+
+    padding: 0.4em 1em;
+
+    height: 5rem;
+
+    .LOGO
+    {
+        font-family:'Times New Roman', Times, serif;
+        font-size: 3em;
+        color: #9f7260;
+
+        animation: shine 1.5s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes shine 
+{
+    from {
+      text-shadow: 0 0 1px #fff,
+        0 0 1px #CD4631,
+        0 0 1px #CD4631,
+        0 0 1px #CD4631,
+        0 0 1px #CD4631,
+        0 0 1px #CD4631;
+    }
+    to {
+      text-shadow: 0 0 2px #fff,
+        0 0 2px #fff,
+        0 0 2px #fff,
+        0 0 2px #CD4631,
+        0 0 2px #CD4631,
+        0 0 2px #CD4631,
+        0 0 2px #CD4631,
+        0 0 2px #CD4631;
+    }
+}

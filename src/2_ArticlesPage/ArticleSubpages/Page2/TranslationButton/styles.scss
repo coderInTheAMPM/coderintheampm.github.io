@@ -1,0 +1,48 @@
+.translation-wrapper
+{
+    overflow: hidden;
+    margin-bottom: 30px;
+
+    .translate-button
+    {
+        cursor:pointer;
+    
+        @media screen and (max-width: 1150px) { display: none; }
+    
+        // padding-right: 20px;
+        height: 45px;
+        
+        transition: all .3s ease 0s;
+        filter: grayscale(100%);
+        
+        &:hover { filter: grayscale(0%); }
+
+        position: absolute;
+        left: 50vw;
+        transform: translate(-50%, 0);
+    }
+
+    .language-dropdown
+    {
+        position: absolute;
+        z-index: 200;
+
+        height: 180px;
+        background-color: #ac3232;
+        padding: 10px;
+        border-radius: 10px;
+        right: 20px;
+        transform: translate(0, -50%);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+        .item
+        {
+            font-size: 19px;
+            letter-spacing: 0.04em;
+        }
+    }
+}

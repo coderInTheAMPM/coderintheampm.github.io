@@ -1,0 +1,45 @@
+.footer
+{
+    width: 100%;
+    min-height: 130px;
+    background-color: #424549;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    @media screen and (max-width: 650px) { flex-direction: column; align-items: center; gap:15px; }
+
+    padding: 10px;
+
+    .info
+    {
+        color: #c0c0c0;
+        font-size: 20px;
+        font-weight: bold;
+
+        width: 100%;
+        justify-self: left;
+    }
+
+    img
+    {
+        height: 100px;
+        opacity: 0.2;
+    }
+
+    .people-info
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        row-gap: 5px;
+
+        .name
+        {
+            color: #c0c0c0;
+            font-size: 20px;
+        }
+    }
+}
